@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no"> <!-- disables iOS phone/address/calendar detection -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jack Morton</title>
+
+  <style type="text/css">
+
+  /*=======================
+
+  Reset Styles
+  http://templates.mailchimp.com/development/css/reset-styles/
+
+  =======================*/
+
+  body{
+    margin:0;
+    padding:0;
+  }
+
+  img{
+    border:0 none;
+    display: block;
+    height:auto;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+  }
+
+  a img{
+    border:0 none;
+  }
+
+  .imageFix{
+    display:block;
+  }
+
+  table, td{
+    border-collapse:collapse;
+  }
+
+  #bodyTable{
+    height:100% !important;
+    margin:0;
+    padding:0;
+    width:100% !important;
+  }
+
+
+
+  /*=======================
+
+  Client-specific overrides
+  http://templates.mailchimp.com/development/css/client-specific-styles/
+
+  =======================*/
+
+   /* Outlook Outlook.com / Hotmail
+   .ExternalClass Class Override */
+
+   .ExternalClass{
+    width:100%;
+  }
+
+  .ExternalClass,
+  .ExternalClass p,
+  .ExternalClass span,
+  .ExternalClass font,
+  .ExternalClass td,
+  .ExternalClass div{
+    line-height: 100%;
+  }
+
+  /* Outlook 2007 / 2010 / 2013
+  “Read in Browser” Link */
+
+  #outlook a{
+    padding:0;
+  }
+
+  /* Outlook 2007 / 2010 / 2013
+  <table> Element Spacing */
+
+  table{
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+  }
+
+  /* Outlook 2007 / 2010 / 2013
+  Image resizing */
+
+  img{
+    -ms-interpolation-mode:bicubic;
+  }
+
+    /* OSX / iOS
+    WebKit Text Size Adjustment */
+
+    body{
+      -webkit-text-size-adjust:100%;
+    }
+
+  /* Windows Mobile
+  Windows Mobile Text Size Adjustment */
+
+  body{
+    -ms-text-size-adjust:100%;
+  }
+
+
+
+  /*=======================
+
+  User styles
+
+  =======================*/
+
+  a {
+    color: #ff5000;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  ol, ul {
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    mso-line-height-rule: exactly;
+  }
+
+  ol ul, ul ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    mso-line-height-rule: exactly;
+  }
+
+  #emailContainer td {
+    color: #333d47;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  #preheader {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .preheader-text {
+    color: #333d47;
+    font-size: 10px;
+    line-height: 15px;
+    mso-line-height-rule: exactly;
+    text-align: right;
+    -webkit-text-size-adjust: none;
+  }
+
+  .preheader-text a {
+    color: #333d47;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  .header-image {
+    background-color:#333d47;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  #body {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .body-text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: left;
+    mso-line-height-rule: exactly;
+    padding-top: 25px;
+    -webkit-text-size-adjust: none;
+  }
+
+  .button {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  .button table {
+    background-color: #ff5000;
+  }
+
+  .button-text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+    mso-line-height-rule: exactly;
+    -webkit-text-size-adjust: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left:30px;
+  }
+
+  .button-text a {
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  #social_icons {
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #social_icons_container {
+    width: 290px;
+  }
+
+  .social-icon {
+    padding-right: 10px;
+  }
+
+  #unsubscribe {
+    font-size: 11px;
+    line-height: 15px;
+    mso-line-height-rule: exactly;
+    color: #abafb3 !important;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 400px;
+    text-align: center;
+    -webkit-text-size-adjust: none;
+  }
+
+  #unsubscribe a {
+   color: #abafb3;
+   font-weight: bold;
+   text-decoration: underline;
+ }
+
+
+  /*=======================
+
+  Media queries
+
+  =======================*/
+
+
+  @media only screen and (max-width: 639px){
+
+    table[id=emailContainer]{
+      width:100% !important;
+    }
+
+    td[id=preheader] {
+      padding-right:10px;
+    }
+
+    img[class=header-image] {
+      height: auto !important;
+      width: 100% !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 550px){
+
+    td[id=unsubscribe]{
+      max-width: 400px !important;
+      width: 100% !important;
+      padding-left: 16.666% !important;
+      padding-right: 16.666% !important;
+    }
+
+  }
+
+  </style>
+</head>
+
+<body bgcolor="#e7e8e9">
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="background-color:#e7e8e9;">
+    <tr>
+      <td align="center" valign="top">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" id="emailContainer">
+
+          <!-- Content begins -->
+          <tr>
+            <td align="center" valign="top" id="preheader">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="right" valign="top" class="preheader-text">
+                    [Insert preheader text]
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" class="preheader-text">
+                    <a target="_blank" href="%%webversion%%">View email in a browser</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" valign="top" id="header">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top">
+                    <img src="http://na07.mypinpointe.com/admin/temp/user/565/blanktemplate_header_640x200.png" alt="Header image" border="0" class="header-image" width="640" height="200" style="width:640px; height:200px;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" valign="top" id="body">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" valign="top" class="body-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est mi, dapibus eu enim a, consectetur auctor odio. In varius volutpat sapien non blandit. Maecenas eget magna ut nunc dapibus efficitur a quis lacus.<br>
+                    <br>
+                    Duis in ex sagittis, euismod mauris sed, fermentum turpis. Phasellus lacinia ante eros, ut auctor velit feugiat et. Phasellus volutpat placerat velit a laoreet. Proin semper leo non elementum malesuada. Sed ut molestie lectus. Curabitur mattis libero sit amet lorem laoreet ultricies.<br>
+                    <br>
+                    Nulla nulla enim, feugiat quis purus quis, varius vehicula lacus. Fusce volutpat nisl leo. Donec hendrerit sapien eget euismod commodo. Curabitur nec pulvinar quam.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" class="button">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td align="center" valign="middle" class="button-text">
+                          <a href="#" target="_blank">Call to action</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" class="body-text">
+                    Regards,<br>
+                    <br>
+                    %%Send-Text%%<br>
+                    <strong>Jack Morton Worldwide</strong>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" valign="top" id="social_icons">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" id="social_icons_container">
+                    <table width="290" border="0" cellspacing="0" cellpadding="0" >
+                      <tr>
+                        <td class="social-icon">
+                          <a href="http://www.jackmorton.com/blog" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_SM_Icons_20x20_Jack-Blog-Cutout.png" width="20" height="20" border="0" alt="Jack Blog"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="https://www.linkedin.com/company/164517" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_Linkedin.png" width="20" height="20" border="0" alt="LinkedIn"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://twitter.com/jackmorton" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_Twitter.png" width="20" height="20" border="0" alt="Twitter"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://www.facebook.com/jackmortonworldwide" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_Facebook.png" width="20" height="20" border="0" alt="Facebook"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://www.slideshare.net/jackmortonWW" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_Slideshare.png" width="20" height="20" border="0" alt="SlideShare"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://instagram.com/jackmorton" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_SM_Icons_Instagram.png" width="20" height="20" border="0" alt="Instagram" </a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://vimeo.com/jackmortonww/videos" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_Vimeo.png" width="20" height="20" border="0" alt="Vimeo"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://www.youtube.com/JackMortonWW" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_youtube.png" width="20" height="20" border="0" alt="YouTube"></a>
+                        </td>
+                        <td class="social-icon">
+                          <a href="http://www.pinterest.com/jackmorton" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_pinterest.png" width="20" height="20" border="0" alt="Pinterest"></a>
+                        </td>
+                        <td>
+                          <a href="https://plus.google.com/+jackmorton" target="_blank"><img src="http://mktgimages.jackmorton.com/smlogos/Jack_20x20_Icons_googleplus.png" width="20" height="20" border="0" alt="Google"></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" id="unsubscribe">This e-mail was sent to <a href="mailto:%%emailaddress%%">%%emailaddress%%</a> by <a href="mailto:%%Reply-To%%" target="_blank">%%Reply-To%%</a>.<br>
+                    <strong>Jack Morton Worldwide</strong>, %%Contact Owner Street%%, %%Contact Owner City%%, %%Contact Owner State%%, %%Contact Owner Postal Code%%, %%Contact Owner Country%%<br>
+                    If you no longer wish to receive commercial e-mail messages from <a href="mailto:%%Reply-To%%" target="_blank">%%Reply-To%%</a>, please select the following link: <a href="%%unsubscribelink%%" target="_blank">Unsubscribe</a>.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+
+          <!-- Content ends -->
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
